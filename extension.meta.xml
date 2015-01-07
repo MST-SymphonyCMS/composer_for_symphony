@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension id="symphony-composer" status="experimental" xmlns="http://symphony-cms.com/schemas/extension/1.0">
+	<name>Composer Integration</name>
+	<description>Integrate third party APIs into Symphony CMS using Composer.</description>
+	<authors>
+		<author>
+			<name github="psychoticmeow" symphony="buzzomatic">Rowan Lewis</name>
+			<website>http://nbsp.io/</website>
+		</author>
+	</authors>
+	<releases>
+		<release version="0.1" date="2015-01-07" min="2.5" max="2.5.x" />
+	</releases>
+</extension>
