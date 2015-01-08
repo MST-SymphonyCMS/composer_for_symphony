@@ -1,6 +1,6 @@
 <?php
 
-class Extension_Symphony_Composer extends Extension
+class Extension_Composer_For_Symphony extends Extension
 {
     protected static $autoloader;
     protected static $prepared;
