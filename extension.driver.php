@@ -10,7 +10,7 @@ class Extension_Symphony_Composer extends Extension
         return static::$autoloader;
     }
 
-    public function getComposerConfig()
+    public function getConfiguration()
     {
         $file = DOCROOT . '/' . trim(Symphony::Configuration()->get('file', 'symphony-composer'), '/');
 
@@ -93,7 +93,7 @@ class Extension_Symphony_Composer extends Extension
         if (false === isset(static::$prepared)) {
             static::$prepared = true;
 
-            $config = $this->getComposerConfig();
+            $config = $this->getConfiguration();
 
             if (false === $config) {
                 return false;
