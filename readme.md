@@ -47,3 +47,5 @@ And the configuration file can be read by calling:
 ```php
 Symphony::ExtensionManager()->create('composer_for_symphony')->getConfiguration();
 ```
+
+For a complete look at what is possible with the Composer autoloader, have a look at the [ClassLoader documentation](https://getcomposer.org/apidoc/master/Composer/Autoload/ClassLoader.html).
