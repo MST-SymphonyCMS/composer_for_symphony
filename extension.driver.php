@@ -12,7 +12,7 @@ class Extension_Composer_For_Symphony extends Extension
 
     public function getConfiguration()
     {
-        $file = DOCROOT . '/' . trim(Symphony::Configuration()->get('file', 'symphony-composer'), '/');
+        $file = DOCROOT . '/' . trim(Symphony::Configuration()->get('file', 'composer-for-symphony'), '/');
 
         if (false === is_file($file)) {
             return false;
@@ -59,18 +59,18 @@ class Extension_Composer_For_Symphony extends Extension
     {
         $fieldset = new XMLElement('fieldset');
         $fieldset->setAttribute('class', 'settings');
-        $fieldset->appendChild(new XMLElement('legend', __('Entry Tools')));
+        $fieldset->appendChild(new XMLElement('legend', __('Composer for Symphony')));
 
         $label = Widget::Label(__('Composer File'));
         $input = Widget::Input(
-            'settings[symphony-composer][file]',
-            Symphony::Configuration()->get('file', 'symphony-composer')
+            'settings[composer-for-symphony][file]',
+            Symphony::Configuration()->get('file', 'composer-for-symphony')
         );
         $input->setAttribute('placeholder', 'composer.json');
         $label->appendChild($input);
 
-        if (isset($context['errors']['symphony-composer']['file'])) {
-            $label = Widget::Error($label, $context['errors']['symphony-composer']['file']);
+        if (isset($context['errors']['composer-for-symphony']['file'])) {
+            $label = Widget::Error($label, $context['errors']['composer-for-symphony']['file']);
         }
 
         $fieldset->appendChild($label);
@@ -81,10 +81,10 @@ class Extension_Composer_For_Symphony extends Extension
     public function onSavePreferences($context)
     {
         if (
-            false === isset($context['settings']['symphony-composer']['file'])
-            || '' === trim($context['settings']['symphony-composer']['file'])
+            false === isset($context['settings']['composer-for-symphony']['file'])
+            || '' === trim($context['settings']['composer-for-symphony']['file'])
         ) {
-            $context['errors']['symphony-composer']['file'] = __('Enter the relative path to your composer file.');
+            $context['errors']['composer-for-symphony']['file'] = __('Enter the relative path to your composer file.');
         }
     }
 
