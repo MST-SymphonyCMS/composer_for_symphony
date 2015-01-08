@@ -7,6 +7,7 @@ Integrate third party APIs into Symphony CMS using [Composer](https://getcompose
 
 1. Upload the 'composer_for_symphony' folder in this archive to your Symphony 'extensions' folder.
 2. Enable it by selecting the "Composer for Symphony", choose Enable from the with-selected menu, then click Apply.
+3. Go to the Preferences page and under "Composer for Symphony" enter the path to `composer.json` relative to the root of your installation.
 
 
 ## Usage
