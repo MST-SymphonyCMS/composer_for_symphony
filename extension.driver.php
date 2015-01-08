@@ -113,13 +113,13 @@ class Extension_Composer_For_Symphony extends Extension
             /**
              * When the composer autoloader has been loaded.
              *
-             * @delegate SymphonyComposerReady
+             * @delegate ComposerReady
              * @param string $context
              *  '/all/'
              * @param Composer\Autoload\ClassLoader $autoloader
              *  The Composer autoloader.
              */
-            Symphony::ExtensionManager()->notifyMembers('SymphonyComposerReady', '/all/', [
+            Symphony::ExtensionManager()->notifyMembers('ComposerReady', '/all/', [
                 'autoloader' => static::$autoloader
             ]);
 

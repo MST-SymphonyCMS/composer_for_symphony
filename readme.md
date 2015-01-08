@@ -20,7 +20,7 @@ public function getSubscribedDelegates()
     return [
         [
             'page' =>       '/all/',
-            'delegate' =>   'SymphonyComposerReady',
+            'delegate' =>   'ComposerReady',
             'callback' =>   'onComposerReady'
         ]
     ];
