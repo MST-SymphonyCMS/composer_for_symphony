@@ -33,19 +33,19 @@ class Extension_Symphony_Composer extends Extension
     {
         return [
             [
-                'page'      => '/system/preferences/',
-                'delegate'  => 'AddCustomPreferenceFieldsets',
-                'callback'  => 'onAppendPreferences'
+                'page' =>       '/system/preferences/',
+                'delegate' =>   'AddCustomPreferenceFieldsets',
+                'callback' =>   'onAppendPreferences'
             ],
             [
-                'page'      => '/system/preferences/',
-                'delegate'  => 'Save',
-                'callback'  => 'onSavePreferences'
+                'page' =>       '/system/preferences/',
+                'delegate' =>   'Save',
+                'callback' =>   'onSavePreferences'
             ],
             [
-                'page'      => '/all/',
-                'delegate'  => 'ModifySymphonyLauncher',
-                'callback'  => 'onApplicationReady'
+                'page' =>       '/all/',
+                'delegate' =>   'ModifySymphonyLauncher',
+                'callback' =>   'onApplicationReady'
             ]
         ];
     }

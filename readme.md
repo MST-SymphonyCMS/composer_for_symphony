@@ -18,9 +18,9 @@ public function getSubscribedDelegates()
 {
     return [
         [
-            'page'      => '/all/',
-            'delegate'  => 'SymphonyComposerReady',
-            'callback'  => 'onComposerReady'
+            'page' =>       '/all/',
+            'delegate' =>   'SymphonyComposerReady',
+            'callback' =>   'onComposerReady'
         ]
     ];
 }
